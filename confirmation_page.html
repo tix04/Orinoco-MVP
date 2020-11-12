@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orinoco Homepage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        <style>
+            @media screen and (min-height: 800px) {
+                 main {
+                    box-sizing: border-box;
+                }
+                *:before,
+                *:after {
+                    box-sizing: border-box;
+                }
+                html,
+                body {
+                    height: 100%;
+                    position: relative;
+                }
+                .main-container {
+                    min-height: 100vh; /* will cover the 100% of viewport */
+                    overflow: hidden;
+                    display: block;
+                    position: relative;
+                    padding-bottom: 100px; /* height of your footer */
+                }
+                footer {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+         </style>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header class="container-fluid py-1 bg-info">
+            <!--Image Logo-->
+            <a class="col-3" href="index.html">
+                <img class="img-fluid" src="./img/Orinoco logo.png" alt="Orinoco Logo">
+            </a>
+            <a href="cart_page.html">
+                <i class="fa fa-cart-plus fa-1x text-warning">
+                    <span id="cartItemQuantity" class="bg-danger"></span>
+                </i>
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <!--Links-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link font-weight-bold">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+       </header>
+       <!--Main Section-->
+       <main class="container confirmationMain">
+           <div class="row p-2 my-4 text-center">
+                <div id="confirmationCard" class="col-12 mx-auto rounded border border-success confirmationCard">
+
+                </div>
+           </div>
+       </main>
+        <!--Footer Section-->
+        <footer class="container-fluid bg-info">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <ul class="nav justify-content-center footer navbar-light">
+                        <li class="nav-item"><a class="nav-link font-weight-bold" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold" href="#">Privacy</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold" href="#">Policy</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold" href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="js/confirmation.js"></script>
+    </body>
+</html>

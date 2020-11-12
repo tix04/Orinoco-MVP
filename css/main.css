@@ -1,0 +1,153 @@
+html, body {
+    height: 100vh;
+}
+
+header, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart {
+    text-align: center;
+}
+
+i {
+    position: relative;
+    top: 7px;
+    left: -15%;
+}
+
+i span {
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    padding: 3px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+nav {
+    position: relative;
+}
+
+@media only screen and (max-width: 992px) {
+    #collapsibleNavbar {
+        background-color: #17a2b8;
+        position: absolute;
+        position: absolute;
+        top: 65px;
+        right: 15px;
+        z-index: 5;
+    }
+    #collapsibleNavbar ul {
+        width: 200px;
+    }
+    #collapsibleNavbar li {
+        border: 1px solid rgb(17, 16, 16);
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    footer li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 95%;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+    thead {
+        display: none;
+    }
+    .table tbody tr, .table tfoot tr {
+        display: flex;
+        flex-flow: row wrap;
+        background: #e9ecef;
+        border-radius: 10px;
+        margin: 0 auto 15px auto;
+        justify-content: center;
+        width: 90%;
+    }
+    .table tbody td {
+        border: 0;
+        flex: 75%;
+    }
+}
+
+.thead-light {
+    font-size: 1.3rem;
+}
+
+td img {
+    min-width: 125px;
+}
+
+td .img-fluid {
+    max-width: 250px;
+}
+
+.productName {
+    font-size: 1.3rem;
+}
+
+td input[type="number"] {
+   width: 50px;
+}
+
+.trash {
+    position: static;
+}
+
+#totalPrice, .totalLabel {
+    font-size: 1.3rem;
+}
+
+.confirmationCard {
+    box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), -10px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 450px) {
+    .confirmationMain {
+        height: 655px
+    }
+}
+
+.homeButton {
+    width: 50%;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+    font-size: 1.3rem;
+}
+
+
