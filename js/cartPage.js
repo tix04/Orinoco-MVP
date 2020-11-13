@@ -73,14 +73,14 @@ function createImagePreview(index) {
 //Display product Name to identify each added cart item
 function getProductName(index) {
     let nameContainer = document.querySelectorAll(`#item${index + 1} td`)[1];
-    nameContainer.classList.add('font-weight-bold', 'productName');
+    nameContainer.classList.add('font-weight-bold', 'productName','fontSize');
     nameContainer.innerText = cartItems[index].name;
 }
 
 //Display any personalization feature chosen or standard features
 function getPersonalizedAccessory(index) {
     let accessoryContainer = document.querySelectorAll(`#item${index + 1} td`)[2];
-    accessoryContainer.classList.add('font-italic');
+    accessoryContainer.classList.add('font-italic','fontSize');
     if(cartItems[index].lensOption === null || cartItems[index].lensOption === undefined) {
         accessoryContainer.innerText = "Default Lens";
     }else{
@@ -91,7 +91,7 @@ function getPersonalizedAccessory(index) {
 //Display product price of any cart item added
 function getProductPrice(index) {
     let priceContainer = document.querySelectorAll(`#item${index + 1} td`)[3];
-    priceContainer.classList.add('font-weight-bold');
+    priceContainer.classList.add('font-weight-bold','fontSize');
     let productPrice = (cartItems[index].price) * 0.01;
     priceContainer.innerText = "$" + productPrice;
 }
@@ -119,7 +119,7 @@ function createRemoveButton(index) {
 
     removeButton.setAttribute('type', 'button');
     removeButton.setAttribute('id', 'removeProduct' + (index + 1));
-    removeButton.classList.add('btn', 'btn-danger');
+    removeButton.classList.add('btn', 'btn-danger', 'buttonWidth');
     removeButton.innerText = "REMOVE";
     buttonContainer.appendChild(removeButton);
 
