@@ -11,11 +11,6 @@ let fullName = decodeURIComponent(stringSearch.slice(fullNameLocation + 10));
 let container = document.getElementById('confirmationCard');
 let gender;
 
-/*console.log(orderId);
-console.log(totalPurchasePrice);
-console.log(sex);
-console.log(fullName);*/
-
 init();
 
 function init() {
@@ -36,10 +31,6 @@ function updateCartBadge() {
         cartItemsQuantity.innerText = quantity;
     }
 }
-
-
-
-
 
 
 function thankYouMessage() {
