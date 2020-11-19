@@ -195,9 +195,9 @@ function deleteItems(index) {
         console.log(itemIndex);
 
         //Delete item from array
-        console.log("Before delete: ", cartArray)
+        console.log("Before delete: ", cartArray);
         let deletedCartItem = cartArray.splice(itemIndex, 1);
-        console.log("After delete: ", deletedCartItem)
+        console.log("After delete: ", deletedCartItem);
 
         //Remove Table Row containing deleted item from local Storage by reloading the page
         deleteItem.parentElement.parentElement.remove();
@@ -229,7 +229,7 @@ function deleteItems(index) {
                 total += cartItem.quantity * cartItem.price;
             });
 
-            totalCartPrice.innerHTML = (total * 0.01).toFixed(2);
+            totalCartPrice.innerHTML = "$" + " " + (total * 0.01).toFixed(2);
         }
     });
 }
