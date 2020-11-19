@@ -6,3 +6,4 @@ E-Commerce site selling sonly cameras where users can choose between different m
 User and tester must have node and npm locally.
 They must install the server within the JWDP5(Junior web developer Path 5) Folder and run the server from there.
 Without this, the app will not function correctly
+
